@@ -6,24 +6,25 @@
 <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
 -->
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media-queries.css">
 <head>
     <meta charset="UTF-8">
     <title>Antonio Cancarevic</title>
 </head>
 <body>
     <div class="sidebar">
-        <a href="#">
+        <a href="#About">
             About
         </a>
-        <a  href="#">
+        <a  href="#Projects">
             Projects
         </a>
-        <a  href="#">
+        <a  href="#Technologies">
             Technologies
         </a>
     </div>
 
-    <section class="welcome">
+    <section class="welcome" id="About">
         <div class="hello"> Hi I am </div>
         <div class="my_name">
             <span class="letter">A</span>
@@ -37,11 +38,11 @@
         <div class="about_short">
             I'm a developer from <span>Austria</span>, in love with <span>arts</span> and <span>music</span> <br> and into recreating <span>imaginations</span>.
         </div>
-        <img src="assets/me_2.jpg" alt="Picture of me.">
+        <img src="assets/images/me_2.jpg" alt="Picture of me.">
     </section>
 
 
-    <a class="scroll_arrow" href="#">
+    <a class="scroll_arrow" id="scroll_arrow" href="#">
         <div class="_text">more</div>
         <div class="arrow">
             <div></div>
@@ -49,41 +50,54 @@
         </div>
     </a>
 
-    <section class="tech">
-        Coming from different careers and hobbies I learned using a broad range of software.
+    <div class="section_title" id="Technologies"> Technologies</div>
+    <section class="tech reveal">
+        <div class="tech_text">
+            Coming from different careers and hobbies I learned using a broad range of software. <br>
+            <br>
+            <span class="more_text">While working for an Art Gallery, I was maintaining the client-database and connecting
+                with different clients to given occasions. Since the Excel sheet was not ideal I build a simple sql-database
+                to maintain the data and to easily fetch the clients (mail, address, etc...) as needed.
+                <br>
+                As I finished little Java-Projects for university I got really confident in my abilities to build working
+                software. In the Software Engineering and Project Management Class I learned how to work with an amazing
+                team on a little project. Since then, I consider myself a decent developer and an even better team-member.
 
+            </span>
+
+        </div>
         <div class="dev_tools">
             <div>Application and Data</div>
             <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java, " />
             </a>
             <a href="https://www.python.org/" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python, " />
             </a>
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="Javascript" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="Javascript, " />
             </a>
             <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5, " />
             </a>
             <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3, " />
             </a>
             <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB, " />
             </a>
             <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL, " />
             </a>
             <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
                 <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" />
             </a>
             <div>DevOps</div>
             <a href="https://www.github.com/FizzToni" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" alt="Github"/>
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" alt="Github, "/>
             </a>
             <a>
-                <img src="https://img.stackshare.io/service/1046/git.png" width="32" height="32" alt="Git" />
+                <img src="https://img.stackshare.io/service/1046/git.png" width="32" height="32" alt="Git, " />
             </a>
             <a>
                 <img src="https://img.stackshare.io/service/1453/icon_IntelliJIDEA.png" width="32" height="32" alt="IntelliJ IDEA">
@@ -93,24 +107,87 @@
         <div class="art_tools">
             <div>Design and Art</div>
             <a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="36" height="36" alt="Photoshop" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="36" height="36" alt="Photoshop, " />
             </a>
             <a href="https://www.adobe.com/uk/products/premiere.html" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/premierepro-colored.svg" width="36" height="36" alt="Premiere Pro" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/premierepro-colored.svg" width="36" height="36" alt="Premiere Pro, " />
             </a>
             <a href="https://www.adobe.com/uk/products/xd.html" target="_blank" rel="noreferrer">
-                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/xd-colored.svg" width="36" height="36" alt="XD" />
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/xd-colored.svg" width="36" height="36" alt="Adobe XD, " />
             </a>
             <a href="https://www.ableton.com/en/shop/live/" target="_blank" rel="noreferrer">
-                <img src="https://img.icons8.com/ios-filled/344/ableton.png" width="36" height="36" alt="Ableton" />
+                <img src="https://img.icons8.com/ios-filled/344/ableton.png" width="36" height="36" alt="Ableton Live" />
             </a>
         </div>
-        <br>
-
     </section>
 
-    <section class="projects">
-
+    <div class="section_title" id="Projects">Projects</div>
+    <section class="projects reveal">
+        <div class="project_card">Ticket-Service
+            <div class="tech_stack">Java, Springboot, REST, security</div>
+            <div class="_text">
+                In our software-engineering class we designed a fullstack ticket selling software. We used plain Java and
+                a Springboot-Framework for the backend and plain JS, HTML and CSS for the frontend. Users could log into
+                their accounts and do various tasks depending on their role (employee, administrator, customer). Every Ticket
+                created an one-time useable QR code.
+            </div>
+        </div>
+        <div class="project_card">FHIR - Health-App
+            <div class="tech_stack">Java, Kotlin, REST, MongoDB, FHIR</div>
+            <div class="_text">
+                In the mobile computing class we were challenged to design a Health App using the FHIR Framework. We were
+                free to use any tech-stack we wanted. So I used the one I was most familiar with, and the one that seemed
+                most comfortable for me. I derived my Java backend-server from HAPI-FHIR and created my App with Kotlin in
+                Android Studio. The two communicated with JSON over a simple REST api. Since I only needed a simple server
+                to store the data I ended up using MongoDB for its nice interface. Users could set up their medical information
+                to have it at hand in case of an emergency (ICE) and as a planner to have important appointments saved and
+                contact information to various doctors or persons.
+            </div>
+        </div>
+        <div class="project_card">Arduino Home Automation
+            <div class="tech_stack">Arduino, C++</div>
+            <div class="_text">
+                Many stand before the same problem at some point. Having a beloved basil-plant that now hase to face 2 weeks
+                of drought because vacations are up ahead, and there is just no way, it fits in our bags. This, (and some
+                not so dry walls) got me into programming my own micro-controllers. I built a mesh with some sensors at various
+                places, so i can monitor everything on one screen. Since the wifi-module does not reach as far as I would like
+                i ended up placing multiple arduinos-connected to a mesh so I can retrieve data even from the one in my bathroom.
+                I monitor the humidity behind couches and wardrobes and update a list of outdoor and indoor temperature.
+                One plant's soil is being monitored and watered by an automatic pump... if there is water in the tank. The
+                plant still lives.
+            </div>
+        </div>
+        <div class="project_card">Various little Python Apps for a Doctors Office
+            <div class="tech_stack">Python</div>
+            <div class="_text">
+                These include practical little apps, that I couldn't find anywhere else, or thought i could easily develop
+                them myself.
+            </div>
+        </div>
+        <div class="project_card">Website for Doctors Office
+            <div class="tech_stack">JS, CSS, HTML</div>
+            <div class="_text">
+                Since the website for <a href="https://neurodiagnostik.at">neurodiagnostik.at</a> is still an very outdated
+                website, I decided to take it into my own hands and design a new website, populate with new and further
+                information and present it to my boss. Right now, we are sorting legal texts and some changes he wants to
+                make to avoid any pitfalls with patients. The goal is to relieve the staff of unnecessary phone-calls,
+                since until now, nearly 90% of the traffic the laboratory gets, is still processed through lengthy phone
+                calls and many back and forth mails. The further goal is, to provide findings over the website, but for that
+                I need to read into privacy and data protection.
+             </div>
+        </div>
+        <div class="project_card">Artistic Website for an Creative Thinking Class
+            <div class="tech_stack">JS, CSS, HTML</div>
+            <div class="_text"></div>
+        </div>
+        <div class="project_card">Phasmophilia - React App
+            <div class="tech_stack">React, Github</div>
+            <div class="_text"></div>
+        </div>
+        <div class="project_card">Personal Website
+            <div class="tech_stack">JS, CSS, HTML</div>
+            <div class="_text"></div>
+        </div>
     </section>
 
 
@@ -256,10 +333,11 @@
     </section>
     </div>
 
-<footer>
     <div class="references">
         <a href="https://www.flaticon.com/free-icons/about-person" title="about person icons">About person icons created by smashingstocks - Flaticon</a>
     </div>
-</footer>
+    <script src="script.js"></script>
 </body>
+<footer>
+</footer>
 </html>

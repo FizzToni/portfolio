@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Rubik+Glitch&family=Rubik:wght@700;800&display=swap');
 
 
@@ -13,6 +12,9 @@
     --dark-color: #2C2A43;
     --medium-color: #493E74;
     --light-color: #7CADA7;
+
+    --shadow-main:   20px  20px 60px #cacfd2,
+                    -20px -20px 60px #f2f7fc;
 
     text-align: center;
 }
@@ -38,11 +40,10 @@ a:link, a:visited {
 
 
 .welcome {
-    padding: 4em;
     text-align: center;
     align-content: center;
     justify-content: space-around;
-    height: 100vh;
+    min-height: 100vh;
 }
 .hello {
     font-size: 2.5rem;
@@ -90,39 +91,101 @@ a:link, a:visited {
 
 }
 
-
+.section_title {
+    font-size: 2.2em;
+}
 
 
 .tech {
     display: grid;
-    font-size: 1.5em;
-    border: 2px solid deeppink;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 10fr;
-    gap: 0px 0px;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
     grid-template-areas:
-    "title title"
-    "one two";
+    "text tech"
+    "text art";
+
+    align-content: center;
+    width: 70vw;
+    margin: 2em;
+;
+
+}
+.tech > div {
+    box-shadow: var(--shadow-main);
+    background-color: #DEE3E7;
+    border-radius: 11px;
 }
 .tech div {
-    border: 2px solid deeppink;
     padding: 0.5em;
-    margin: 0.5em;
 }
+.tech_text {
+    grid-area: text;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+.tech_text > .more_text {
+    font-size: 0.9em;
+}
+
 .dev_tools {
-    grid-area: one;
+    grid-area: tech;
+    font-size: 1.5em;
+
+    border-radius: 5px;
 }
 .art_tools {
-    grid-area: two;
+    grid-area: art;
+    font-size: 1.5em;
+
+    border-radius: 5px;
 }
+
+
 
 .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
 
-
+    width: 70vw;
+    font-size: 1.5em;
+    margin: 2em;
 }
 
+.project_card {
+    background-color: rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    min-height: max-content;
+    padding: 0.2em;
 
+    flex: 1 1 auto;
+    max-width: 500px;
 
+    box-shadow: var(--shadow-main);
+    background-color: #DEE3E7;
+    border-radius: 11px;
+}
+
+.tech_stack {
+    font-size: 0.8em;
+}
+.project_card > ._text {
+    font-size: 0.7em;
+    margin-block: 0.5em;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
 
@@ -150,9 +213,14 @@ a:link, a:visited {
 }
 
 .scroll_arrow {
-    position: fixed;
+    position: absolute;
     top: 95vh;
-    left: 70%;
+    transform: translateX(1000%);
+    transition: 2s all ease-in-out;
+}
+.scroll_arrow.to_side {
+    transform: translateX(1600%);
+    position: sticky;
 }
 .arrow {
     position: relative;
@@ -175,9 +243,7 @@ a:link, a:visited {
     transform: translateY(-32px);
     background-color: black;
 }
-.scroll_arrow ._line {
 
-}
 .scroll_arrow ._text {
     transform: rotate(-90deg) translate(44px , -10px);
     text-transform: uppercase;
