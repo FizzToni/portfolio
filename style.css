@@ -220,7 +220,6 @@ a:link, a:visited {
 }
 .scroll_arrow.to_side {
     transform: translateX(1600%);
-    position: sticky;
 }
 .arrow {
     position: relative;
